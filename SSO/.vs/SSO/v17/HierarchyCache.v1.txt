@@ -1,0 +1,567 @@
+﻿++Решение "SSO" ‎(проекты: 4 из 4)
+i:{00000000-0000-0000-0000-000000000000}:SSO.sln
+++SSO
+i:{00000000-0000-0000-0000-000000000000}:SSO
+++Connected Services 
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:>1532
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:>1534
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>1535
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:>1533
+++Properties
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:f:\data\programming\project 2 course\sso\sso\sso\properties\
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\properties\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\properties\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\properties\
+++Зависимости
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:>1530
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:>1528
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>1529
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:>1531
+++appsettings.json
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:f:\data\programming\project 2 course\sso\sso\sso\appsettings.json
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\appsettings.json
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\appsettings.json
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\appsettings.json
+++Program.cs
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:f:\data\programming\project 2 course\sso\sso\sso\program.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\program.cs
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\program.cs
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\program.cs
+++Зависимости службы не обнаружены
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:>1537
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:>1536
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:>1539
+++launchSettings.json
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:f:\data\programming\project 2 course\sso\sso\sso\properties\launchsettings.json
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\properties\launchsettings.json
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\properties\launchsettings.json
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\properties\launchsettings.json
+++Анализаторы
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:анализаторы
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:анализаторы
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:анализаторы
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:анализаторы
+++Пакеты
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:пакеты
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:пакеты
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:пакеты
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:пакеты
+++Платформы
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:платформы
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:платформы
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:платформы
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:платформы
+++appsettings.Development.json
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:f:\data\programming\project 2 course\sso\sso\sso\appsettings.development.json
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\appsettings.development.json
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\appsettings.development.json
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\users\artem\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\users\artem\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\users\artem\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\users\artem\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.4)
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:>1615
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:>1616
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>1625
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:>1624
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.4)
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:>1610
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:>1613
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>1623
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:>1622
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:>1604
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:>1607
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>1618
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:>1614
+++Microsoft.EntityFrameworkCore.Tools (6.0.4)
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:>1617
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:>1620
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>1627
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:>1626
+++Swashbuckle.AspNetCore (6.3.1)
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:>1608
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:>1609
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>1621
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:>1619
+++Microsoft.AspNetCore.App
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:f:\data\programming\project 2 course\sso\sso\sso\microsoft.aspnetcore.app
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\microsoft.aspnetcore.app
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\microsoft.aspnetcore.app
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{c7f09014-80d5-4f9c-a65d-d295a8b309f0}:f:\data\programming\project 2 course\sso\sso\sso\microsoft.netcore.app
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\microsoft.netcore.app
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\microsoft.netcore.app
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\microsoft.netcore.app
+++SSOBase
+i:{00000000-0000-0000-0000-000000000000}:SSOBase
+++wwwroot
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\
+++Auth
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\auth\
+++AdminRegisterModel.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\auth\adminregistermodel.cs
+++ApplicationDbContext.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\auth\applicationdbcontext.cs
+++ApplicationUser.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\auth\applicationuser.cs
+++LoginModel.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\auth\loginmodel.cs
+++RegisterModel.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\auth\registermodel.cs
+++Response.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\auth\response.cs
+++UserRoles.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\auth\userroles.cs
+++Controllers
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\controllers\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\controllers\
+++AuthenticateController.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\controllers\authenticatecontroller.cs
+++HomeController.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\controllers\homecontroller.cs
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\controllers\homecontroller.cs
+++LoginController.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\controllers\logincontroller.cs
+++RegisterAdminController.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\controllers\registeradmincontroller.cs
+++RegisterController.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\controllers\registercontroller.cs
+++Migrations
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\migrations\
+++20220426164221_Initial.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\migrations\20220426164221_initial.cs
+++20220426182507_ApplicationUserInitial.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\migrations\20220426182507_applicationuserinitial.cs
+++SSOBaseDbContextModelSnapshot.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\migrations\ssobasedbcontextmodelsnapshot.cs
+++Pages
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\
+++Views
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\views\
+++Home
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\home\
+++About.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\home\about.cshtml
+++Index.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\home\index.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\login\index.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\register\index.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\registeradmin\index.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\index.cshtml
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\views\index.cshtml
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\index.cshtml
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\index.cshtml
+++Login
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\login\
+++Register
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\register\
+++RegisterAdmin
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\views\registeradmin\
+++css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\css\
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\css\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\css\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\
+++js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\js\
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\js\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\js\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\
+++favicon.ico
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\favicon.ico
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\favicon.ico
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\favicon.ico
+++20220426164221_Initial.Designer.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\migrations\20220426164221_initial.designer.cs
+++20220426182507_ApplicationUserInitial.Designer.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\migrations\20220426182507_applicationuserinitial.designer.cs
+++Shared
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\shared\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\shared\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\shared\
+++_ViewImports.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\_viewimports.cshtml
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\_viewimports.cshtml
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\_viewstart.cshtml
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\_viewstart.cshtml
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\_viewstart.cshtml
+++Error.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\error.cshtml
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\error.cshtml
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\error.cshtml
+++Privacy.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\privacy.cshtml
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\privacy.cshtml
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\privacy.cshtml
+++site.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\css\site.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\css\site.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\css\site.css
+++site.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\js\site.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\js\site.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\js\site.js
+++bootstrap
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\
+++jquery
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery\
+++jquery-validation
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation-unobtrusive\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation-unobtrusive\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation-unobtrusive\
+++_Layout.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\shared\_layout.cshtml
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\shared\_layout.cshtml
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\shared\_validationscriptspartial.cshtml
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\shared\_validationscriptspartial.cshtml
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\shared\_validationscriptspartial.cshtml
+++Error.cshtml.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\error.cshtml.cs
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\error.cshtml.cs
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\error.cshtml.cs
+++Index.cshtml.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\index.cshtml.cs
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\index.cshtml.cs
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\index.cshtml.cs
+++Privacy.cshtml.cs
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\privacy.cshtml.cs
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\privacy.cshtml.cs
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\privacy.cshtml.cs
+++dist
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery\dist\
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation\dist\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery\dist\
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation\dist\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery\dist\
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\license
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\license
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery\license.txt
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery\license.txt
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery\license.txt
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation\license.md
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation\license.md
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++_Layout.cshtml.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\pages\shared\_layout.cshtml.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\pages\shared\_layout.cshtml.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\pages\shared\_layout.cshtml.css
+++jquery.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery\dist\jquery.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery\dist\jquery.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation\dist\additional-methods.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation\dist\additional-methods.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery\dist\jquery.min.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery\dist\jquery.min.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\jquery\dist\jquery.min.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\jquery\dist\jquery.min.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{fe68542f-bd0f-4a9f-b6ba-c8ae9f8d36a1}:f:\data\programming\project 2 course\sso\sso\ssobase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:f:\data\programming\project 2 course\sso\sso\testapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+i:{252c02c5-7d3b-41e1-9869-d1757aa3a2cf}:f:\data\programming\project 2 course\sso\sso\usersapplication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++TestApplication
+i:{00000000-0000-0000-0000-000000000000}:TestApplication
+++UsersApplication
+i:{00000000-0000-0000-0000-000000000000}:UsersApplication
+++База данных SQL Server
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>2220
+++Обнаружена зависимость База данных SQL Server.
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>2221
+++Платформа удостоверений Майкрософт
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>2218
+++Обнаружена зависимость Платформа удостоверений Майкрософт.
+i:{de0215e7-bb05-4480-959e-eac57e9c0fa8}:>2219
+++Web.config
