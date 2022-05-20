@@ -215,6 +215,12 @@ namespace UserCRUD.Controllers
                 _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(token.token_type, token.access_token);
                 var response = await _httpClient.GetAsync(_configuration["Constants:SSO"] + "/api/Authenticate/edit?user_info=" + userInfo);
                 return RedirectToAction(nameof(Index));
+            } else
+            {
+                var message = string.Join(" | ", ModelState.Values
+        .SelectMany(v => v.Errors)
+        .Select(e => e.ErrorMessage));
+                return Content(message);
             }
             return View(user);
         }

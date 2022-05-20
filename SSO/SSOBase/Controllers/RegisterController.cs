@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using SSOBase.Auth;
 using System.Net;
 using System.Text;
@@ -9,11 +10,14 @@ namespace SSOBase.Controllers
     [Route("register")]
     public class RegisterController : Controller
     {
-        private readonly IConfiguration _configuration;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public RegisterController(IConfiguration configuration)
+        public RegisterController(UserManager<ApplicationUser> userManager,
+                                  RoleManager<IdentityRole> roleManager)
         {
-            _configuration = configuration;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         [HttpGet]
@@ -25,39 +29,37 @@ namespace SSOBase.Controllers
 
         [Route("")]
         [HttpPost]
-        public async Task<IActionResult> IndexAsync([FromForm] string name, [FromForm] string email, [FromForm] int age, [FromForm] string password)
+        public async Task<IActionResult> IndexAsync(RegisterModel model)
         {
-            if (password.Length < 6)
+            var userExists = await _userManager.FindByEmailAsync(model.Email);
+            if (userExists != null)
             {
-                ViewData["Message"] = "Too short password, please use minimum 6 symbols";
+                ViewData["Message"] = "User with this email already exists!";
                 return View();
             }
-            if (age > 130)
-            {
-                ViewData["Message"] = "Please enter your real age";
-                return View();
-            }
-            RegisterModel registerModel = new RegisterModel()
-            {
-                Name = name,
-                Email = email,
-                Age = age,
-                Password = password
-            };
-            HttpClient _httpClient = new HttpClient();
-            var model = JsonSerializer.Serialize(registerModel);
-            var requestContent = new StringContent(model, Encoding.UTF8, "application/json");
-            var response = await _httpClient.PostAsync(_configuration["Constants:Self"] + "/api/Authenticate/register", requestContent);
 
-            if (response.StatusCode == HttpStatusCode.OK)
+            ApplicationUser user = new()
             {
-                return Content("Registration success");
-            }
-            else
+                Email = model.Email,
+                UserName = model.Email,
+                SecurityStamp = Guid.NewGuid().ToString(),
+                Name = model.Name,
+                Age = model.Age
+            };
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (!result.Succeeded)
             {
-                string result = await response.Content.ReadAsStringAsync();
-                return Content(result);
+                ViewData["Message"] = "User creation failed! Please check user details and try again.";
+                return View();
             }
+
+            if (!await _roleManager.RoleExistsAsync(UserRoles.User))
+                await _roleManager.CreateAsync(new IdentityRole(UserRoles.User));
+            if (await _roleManager.RoleExistsAsync(UserRoles.User))
+            {
+                await _userManager.AddToRoleAsync(user, UserRoles.User);
+            }
+            return Content("Register success");
 
         }
     }

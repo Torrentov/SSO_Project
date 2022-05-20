@@ -1,13 +1,19 @@
-﻿namespace UserCRUD.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace UserCRUD.Models
 {
     public class User
     {
+        [Required(ErrorMessage = "Name is required.")]
         public string name { get; set; }
+        [Required(ErrorMessage = "Age is required.")]
         public int age { get; set; }
         public string? code { get; set; }
         public string? id { get; set; }
         public string? userName { get; set; }
         public string? normalizedUserName { get; set; }
+        [Required(ErrorMessage = "Email is required")]
+        [EmailAddress]
         public string email { get; set; }
         public string? normalizedEmail { get; set; }
         public bool? emailConfirmed { get; set; }
@@ -20,7 +26,10 @@
         public object? lockoutEnd { get; set; }
         public bool? lockoutEnabled { get; set; }
         public int? accessFailedCount { get; set; }
-        public string? roles { get; set; }
+
+        [Required(ErrorMessage = "Role list is required.")]
+        public string roles { get; set; }
+
         public string? password { get; set; }
 
     }
@@ -59,7 +68,7 @@
         public string name { get; set; }
         public int age { get; set; }
         public string roles { get; set; }
-        public string? password { get; set; }
+        public string password { get; set; }
 
         public UserModel(User user)
         {

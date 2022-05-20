@@ -29,7 +29,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="password" class="control-label">Password</label>
-                <input type="password" asp-for="password" class="form-control" />
+                <input type="password" class="form-control input-validation-error" data-val="true" 
+                data-val-minlength="Please use minimum 6 symbols." 
+                data-val-minlength-min="6" data-val-required="The password field is required." 
+                id="password" name="password" aria-describedby="password-error">
                 <span asp-validation-for="password" class="text-danger"></span>
             </div>
             <div class="form-group">

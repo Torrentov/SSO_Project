@@ -1,24 +1,45 @@
-﻿<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-</head>
+﻿@model SSOBase.Auth.RegisterModel
 
-<body>
-  <main id="main-holder">
-    <h1 id="register-header">Register</h1>
+@{
+    ViewData["Title"] = "Register";
+}
 
-    <p>@ViewData["Message"]</p>
+<h1>Register</h1>
 
-    <form method="post" id="register-form">
-      <input type="text" name="name" id="name-field" class="register-form-field" placeholder="Name">
-      <input type="text" name="email" id="email-field" class="register-form-field" placeholder="Email">
-      <input type="number" name="age" id="age-field" class="register-form-field" placeholder="Age">
-      <input type="password" name="password" id="password-field" class="register-form-field" placeholder="Password">
-      <input type="submit" value="Register" id="register-form-submit">
-    </form>
+<h4>New user</h4>
+<hr />
+<p>@ViewData["Message"]</p>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Register">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Name</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Age" class="control-label">Age</label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Password</label>
+                <input type="Password" asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
 
-  </main>
-</body>
-
-</html>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

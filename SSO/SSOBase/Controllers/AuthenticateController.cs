@@ -279,7 +279,15 @@ namespace SSOBase.Controllers
                 return BadRequest(new { message = "User can not be empty" });
             }
             UserModel model = JsonConvert.DeserializeObject<UserModel>(user_info);
-            List<string> userRoles = model.roles.Split(", ").ToList();
+            List<string> userRoles;
+            if (model.roles != null)
+            {
+                userRoles = model.roles.Split(", ").ToList();
+            } else
+            {
+                userRoles = new List<string>();
+                userRoles.Add(UserRoles.User);
+            }
             var user = await _userManager.FindByIdAsync(model.id);
             foreach (var role in userRoles)
             {
@@ -318,7 +326,16 @@ namespace SSOBase.Controllers
                 return BadRequest(new { message = "User can not be empty" });
             }
             UserModel model = JsonConvert.DeserializeObject<UserModel>(user_info);
-            List<string> userRoles = model.roles.Split(", ").ToList();
+            List<string> userRoles;
+            if (model.roles != null)
+            {
+                userRoles = model.roles.Split(", ").ToList();
+            }
+            else
+            {
+                userRoles = new List<string>();
+                userRoles.Add(UserRoles.User);
+            }
             foreach (var role in userRoles)
             {
                 if (!await _roleManager.RoleExistsAsync(role))
@@ -400,35 +417,6 @@ namespace SSOBase.Controllers
             var client = _clientContext.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
             _clientContext.Clients.Remove(client);
             await _clientContext.SaveChangesAsync();
-            return Ok();
-        }
-
-        [HttpPost]
-        [Route("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterModel model)
-        {
-            var userExists = await _userManager.FindByEmailAsync(model.Email);
-            if (userExists != null)
-                return BadRequest(new { message = "User with this email already exists!" });
-
-            ApplicationUser user = new()
-            {
-                Email = model.Email,
-                UserName = model.Email,
-                SecurityStamp = Guid.NewGuid().ToString(),
-                Name = model.Name,
-                Age = model.Age
-            };
-            var result = await _userManager.CreateAsync(user, model.Password);
-            if (!result.Succeeded)
-                return BadRequest(new { message = "User creation failed! Please check user details and try again." });
-
-            if (!await _roleManager.RoleExistsAsync(UserRoles.User))
-                await _roleManager.CreateAsync(new IdentityRole(UserRoles.User));
-            if (await _roleManager.RoleExistsAsync(UserRoles.User))
-            {
-                await _userManager.AddToRoleAsync(user, UserRoles.User);
-            }
             return Ok();
         }
     }
