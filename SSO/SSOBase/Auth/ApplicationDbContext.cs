@@ -12,6 +12,8 @@ namespace SSOBase.Auth
         }
 
         public DbSet<ApplicationUser> Users { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<AuthorizationData> Datas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

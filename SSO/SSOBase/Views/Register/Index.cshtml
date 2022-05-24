@@ -1,4 +1,5 @@
-﻿@model SSOBase.Auth.RegisterModel
+﻿@using System.Security.Claims;
+@model SSOBase.Auth.RegisterModel
 
 @{
     ViewData["Title"] = "Register";
@@ -28,6 +29,17 @@
                 <input asp-for="Age" class="form-control" />
                 <span asp-validation-for="Age" class="text-danger"></span>
             </div>
+            @{
+                var claims = ViewBag.NeededClaims;
+                foreach(Claim claim in claims)
+                {
+                    <div class="form-group">
+                        <label asp-for="AdditionalInfo[claim.Type]" class="control-label">@claim.Type</label>
+                        <input asp-for="AdditionalInfo[claim.Type]" data-val="true" data-val-required="@claim.Type is required" class="form-control" />
+                        <span asp-validation-for="AdditionalInfo[claim.Type]" class="text-danger"></span>
+                    </div>
+                }
+            }
             <div class="form-group">
                 <label asp-for="Password" class="control-label">Password</label>
                 <input type="Password" asp-for="Password" class="form-control" />

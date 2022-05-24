@@ -29,9 +29,30 @@ namespace UserCRUD.Models
 
         [Required(ErrorMessage = "Role list is required.")]
         public string roles { get; set; }
-
+        
         public string? password { get; set; }
+        public Dictionary<string, string> additionalInfo { get; set; }
 
+        public User()
+        {
+            additionalInfo = new Dictionary<string, string>();
+        }
+
+    }
+
+    public class Claim
+    {
+        public string issuer { get; set; }
+        public string originalIssuer { get; set; }
+        public Properties properties { get; set; }
+        public object subject { get; set; }
+        public string type { get; set; }
+        public string value { get; set; }
+        public string valueType { get; set; }
+    }
+
+    public class Properties
+    {
     }
 
     public class Role
@@ -53,12 +74,17 @@ namespace UserCRUD.Models
         public string id { get; set; }
     }
 
+    public class ClaimsRoot
+    {
+        public List<Claim> claims { get; set; }
+    }
 
     public class UserRoot
     {
         public User user { get; set; }
         public List<string> roles { get; set; }
         public string id { get; set; }
+        public List<Claim> claims { get; set; }
     }
 
     public class UserModel
@@ -69,6 +95,7 @@ namespace UserCRUD.Models
         public int age { get; set; }
         public string roles { get; set; }
         public string password { get; set; }
+        public Dictionary<string, string> additionalInfo { get; set; }
 
         public UserModel(User user)
         {
@@ -78,6 +105,7 @@ namespace UserCRUD.Models
             age = user.age;
             roles = user.roles;
             password = user.password;
+            additionalInfo = user.additionalInfo;
         }
     }
 

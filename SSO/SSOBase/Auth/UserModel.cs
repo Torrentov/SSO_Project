@@ -8,5 +8,7 @@
         public int age { get; set; }
         public string roles { get; set; }
         public string? password { get; set; }
+        public Dictionary<string, string> additionalInfo { get; set; }
+        public Dictionary<string, string>? VisibleClaims { get; set; }
     }
 }

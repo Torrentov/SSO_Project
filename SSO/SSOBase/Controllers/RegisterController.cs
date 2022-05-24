@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SSOBase.Auth;
 using System.Net;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 
@@ -22,9 +23,19 @@ namespace SSOBase.Controllers
 
         [HttpGet]
         [Route("")]
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
-            return View();
+            var superuser = await _userManager.FindByEmailAsync("Superuser");
+            var claims = await _userManager.GetClaimsAsync(superuser);
+            var model = new RegisterModel();
+            ViewBag.NeededClaims = claims;
+
+            foreach(var claim in claims)
+            {
+                model.AdditionalInfo.Add(claim.Type, "");
+            }
+
+            return View(model);
         }
 
         [Route("")]
@@ -59,6 +70,13 @@ namespace SSOBase.Controllers
             {
                 await _userManager.AddToRoleAsync(user, UserRoles.User);
             }
+
+            foreach(var info in model.AdditionalInfo)
+            {
+                var claim = new Claim(info.Key, info.Value);
+                await _userManager.AddClaimAsync(user, claim);
+            }
+
             return Content("Register success");
 
         }

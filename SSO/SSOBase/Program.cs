@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
@@ -14,8 +13,6 @@ ConfigurationManager configuration = builder.Configuration;
 
 // For Entity Framework
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("ConnStr")));
-builder.Services.AddDbContext<ClientsDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("ClientsConnStr")));
-builder.Services.AddDbContext<DataDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DataConnStr")));
 
 // For Identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()

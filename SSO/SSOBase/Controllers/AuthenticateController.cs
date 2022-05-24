@@ -16,21 +16,18 @@ namespace SSOBase.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly ClientsDbContext _clientContext;
-        private readonly DataDbContext _dataContext;
+        private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
 
         public AuthenticateController(
             UserManager<ApplicationUser> userManager,
             RoleManager<IdentityRole> roleManager,
-            ClientsDbContext clientContext,
-            DataDbContext dataContext,
+            ApplicationDbContext context,
             IConfiguration configuration)
         {
             _userManager = userManager;
             _roleManager = roleManager;
-            _clientContext = clientContext;
-            _dataContext = dataContext;
+            _context = context;
             _configuration = configuration;
         }
 
@@ -41,7 +38,7 @@ namespace SSOBase.Controllers
                                                        [FromForm] string email,
                                                        [FromForm] string password)
         {
-            var client = _clientContext.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
+            var client = _context.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
             if (client == null)
             {
                 return BadRequest(new { message = "Unknown client" });
@@ -61,24 +58,15 @@ namespace SSOBase.Controllers
             {
                 string code = Guid.NewGuid().ToString();
                 DateTime codeExpirationTime = DateTime.UtcNow.AddMinutes(5);
-                user.Code = code;
-                var updateStatus = await _userManager.UpdateAsync(user);
                 AuthorizationData data = new()
                 {
                     Code = code,
                     Email = email,
                     CodeExpirationTime = codeExpirationTime
                 };
-                _dataContext.Add(data);
-                await _dataContext.SaveChangesAsync();
-                if (updateStatus.Succeeded)
-                {
-                    return Ok(new { code = code });
-                }
-                else
-                {
-                    return BadRequest(new { message = "Failed to update database" });
-                }
+                _context.Add(data);
+                await _context.SaveChangesAsync();
+                return Ok(new { code = code });
             }
             else
             {
@@ -99,12 +87,12 @@ namespace SSOBase.Controllers
                 return BadRequest(new { message = "Unknown grant type" });
             }
 
-            var client = _clientContext.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
+            var client = _context.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
             if (client == null || (client != null && client.ClientSecret != client_secret))
             {
                 return BadRequest(new { message = "Invalid client" });
             }
-            var data = _dataContext.Datas.Where(b => b.Code == code).FirstOrDefault();
+            var data = _context.Datas.Where(b => b.Code == code).FirstOrDefault();
             if (data == null)
             {
                 return BadRequest(new { message = "Invalid code" });
@@ -113,8 +101,8 @@ namespace SSOBase.Controllers
             {
                 return BadRequest(new { message = "Code expired" });
             }
-            _dataContext.Datas.Remove(data);
-            await _dataContext.SaveChangesAsync();
+            _context.Datas.Remove(data);
+            await _context.SaveChangesAsync();
             var user = await _userManager.FindByEmailAsync(data.Email);
             if (user == null)
             {
@@ -152,12 +140,12 @@ namespace SSOBase.Controllers
                 return BadRequest(new { message = "Unknown grant type" });
             }
 
-            var client = _clientContext.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
+            var client = _context.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
             if (client == null || (client != null && client.ClientSecret != client_secret))
             {
                 return BadRequest(new { message = "Invalid client" });
             }
-            var data = _dataContext.Datas.Where(b => b.Code == code).FirstOrDefault();
+            var data = _context.Datas.Where(b => b.Code == code).FirstOrDefault();
             if (data == null)
             {
                 return BadRequest(new { message = "Invalid code" });
@@ -170,8 +158,8 @@ namespace SSOBase.Controllers
             {
                 return BadRequest(new { message = "Code expired" });
             }
-            _dataContext.Datas.Remove(data);
-            await _dataContext.SaveChangesAsync();
+            _context.Datas.Remove(data);
+            await _context.SaveChangesAsync();
             var user = await _userManager.FindByEmailAsync(data.Email);
             if (user == null)
             {
@@ -202,11 +190,12 @@ namespace SSOBase.Controllers
         {
             var email = User.Identity.Name;
             var user = await _userManager.FindByEmailAsync(email);
+            var claims = await _userManager.GetClaimsAsync(user);
             if (!await _userManager.IsInRoleAsync(user, UserRoles.Administrator))
             {
                 return BadRequest(new { message = "Permission denied" });
             }
-            return Ok(new { users = _userManager.Users, roles=_roleManager.Roles });
+            return Ok(new { users = _userManager.Users, roles=_roleManager.Roles, claims=claims });
         }
 
         [Route("clients-all")]
@@ -219,7 +208,7 @@ namespace SSOBase.Controllers
             {
                 return BadRequest(new { message = "Permission denied" });
             }
-            return Ok(new { clients = _clientContext.Clients });
+            return Ok(new { clients = _context.Clients });
         }
 
         [Route("me")]
@@ -235,6 +224,20 @@ namespace SSOBase.Controllers
             return Ok(new { id = user.Id });
         }
 
+        [Route("claims")]
+        [Authorize(Policy = "ValidAccessToken")]
+        public async Task<IActionResult> Claims()
+        {
+            var email = User.Identity.Name;
+            var user = await _userManager.FindByEmailAsync(email);
+            if (!await _userManager.IsInRoleAsync(user, UserRoles.User))
+            {
+                return BadRequest(new { message = "Permission denied" });
+            }
+            var claims = await _userManager.GetClaimsAsync(user);
+            return Ok(new { claims = claims });
+        }
+
         [Route("user")]
         [Authorize(Policy = "ValidAccessToken")]
         public async Task<IActionResult> UserInfo(string id)
@@ -247,7 +250,20 @@ namespace SSOBase.Controllers
             }
             var user = await _userManager.FindByIdAsync(id);
             var roles = await _userManager.GetRolesAsync(user);
-            return Ok(new { user = user, roles = roles });
+            var claims = await _userManager.GetClaimsAsync(user);
+
+            var superuser = await _userManager.FindByEmailAsync("Superuser");
+            var neededClaims = await _userManager.GetClaimsAsync(superuser);
+            foreach(var claim in neededClaims)
+            {
+                if (claims.Where(b => b.Type == claim.Type).FirstOrDefault() == null)
+                {
+                    var newClaim = new Claim(claim.Type, "");
+                    await _userManager.AddClaimAsync(user, newClaim);
+                }
+            }
+            claims = await _userManager.GetClaimsAsync(user);
+            return Ok(new { user = user, roles = roles, claims = claims });
         }
 
         [Route("client")]
@@ -260,7 +276,7 @@ namespace SSOBase.Controllers
             {
                 return BadRequest(new { message = "Permission denied" });
             }
-            var client = _clientContext.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
+            var client = _context.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
             return Ok(new { client = client });
         }
 
@@ -289,15 +305,15 @@ namespace SSOBase.Controllers
                 userRoles.Add(UserRoles.User);
             }
             var user = await _userManager.FindByIdAsync(model.id);
+            await _userManager.RemoveFromRolesAsync(user, UserRoles.GetAllAdminRoles());
             foreach (var role in userRoles)
             {
                 if (!await _roleManager.RoleExistsAsync(role))
                 {
                     return BadRequest(new { message = "Invalid roles" });
-                }
-                if (await _roleManager.RoleExistsAsync(role) && !UserRoles.GetAllRoles().Contains(role))
+                } else if (role != UserRoles.User)
                 {
-                    await _userManager.RemoveFromRoleAsync(user, role);
+                    await _userManager.AddToRoleAsync(user, role);
                 }
             }
 
@@ -305,9 +321,15 @@ namespace SSOBase.Controllers
             user.Email = model.email;
             user.Age = model.age;
             await _userManager.UpdateAsync(user);
-            await _userManager.RemoveFromRolesAsync(user, UserRoles.GetAllAdminRoles());
-            await _userManager.AddToRolesAsync(user, userRoles);
-            
+
+            var oldClaims = await _userManager.GetClaimsAsync(user);
+            await _userManager.RemoveClaimsAsync(user, oldClaims);
+            foreach (var claimPair in model.additionalInfo)
+            {
+                var claim = new Claim(claimPair.Key, claimPair.Value);
+                await _userManager.AddClaimAsync(user, claim);
+            }
+
             return Ok();
         }
 
@@ -359,6 +381,12 @@ namespace SSOBase.Controllers
             await _userManager.AddToRolesAsync(user, userRoles);
             await _userManager.AddToRoleAsync(user, UserRoles.User);
 
+            foreach(var claimPair in model.additionalInfo)
+            {
+                var claim = new Claim(claimPair.Key, claimPair.Value);
+                await _userManager.AddClaimAsync(user, claim);
+            }
+
             return Ok();
         }
 
@@ -383,8 +411,8 @@ namespace SSOBase.Controllers
                 ClientId = model.clientId,
                 ClientSecret = model.clientSecret
             };
-            _clientContext.Add(client);
-            await _clientContext.SaveChangesAsync();
+            _context.Add(client);
+            await _context.SaveChangesAsync();
 
             return Ok();
         }
@@ -414,9 +442,9 @@ namespace SSOBase.Controllers
             {
                 return BadRequest(new { message = "Permission denied" });
             }
-            var client = _clientContext.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
-            _clientContext.Clients.Remove(client);
-            await _clientContext.SaveChangesAsync();
+            var client = _context.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
+            _context.Clients.Remove(client);
+            await _context.SaveChangesAsync();
             return Ok();
         }
     }

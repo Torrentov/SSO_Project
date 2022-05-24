@@ -104,7 +104,6 @@ namespace UserCRUD.Controllers
             }
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(token.token_type, token.access_token);
             var response = await _httpClient.GetAsync(_configuration["Constants:SSO"] + "/api/Authenticate/user?id=" + id);
-            var res = await response.Content.ReadAsStringAsync();
             var user = await response.Content.ReadAsAsync<UserRoot>();
             if (user == null || user.user == null)
             {
@@ -115,15 +114,25 @@ namespace UserCRUD.Controllers
 
         // GET: Users/Create
         [Route("create")]
-        public IActionResult Create()
+        public async Task<IActionResult> CreateAsync()
         {
+            HttpClient _httpClient = new HttpClient();
             var userId = HttpContext.Session.GetString("id");
             var token = _context.Tokens.Where(b => b.id == userId).FirstOrDefault();
             if (token == null)
             {
                 return Redirect(_configuration["Constants:Self"]);
             }
-            return View();
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(token.token_type, token.access_token);
+            var response = await _httpClient.GetAsync(_configuration["Constants:SSO"] + "/api/Authenticate/claims");
+            var claims = await response.Content.ReadAsAsync<ClaimsRoot>();
+            var model = new User();
+            foreach(var claim in claims.claims)
+            {
+                model.additionalInfo.Add(claim.type, "");
+            }
+            ViewBag.NeededClaims = claims.claims;
+            return View(model);
         }
 
         // POST: Users/Create
@@ -170,6 +179,7 @@ namespace UserCRUD.Controllers
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(token.token_type, token.access_token);
             var response = await _httpClient.GetAsync(_configuration["Constants:SSO"] + "/api/Authenticate/user?id=" + id);
             var user = await response.Content.ReadAsAsync<UserRoot>();
+            var claims = user.claims;
             if (user == null || user.user == null)
             {
                 return Redirect(_configuration["Constants:Self"]);
@@ -189,7 +199,12 @@ namespace UserCRUD.Controllers
                 }
             }
             User editableUser = user.user;
+            foreach (var claim in claims)
+            {
+                editableUser.additionalInfo.Add(claim.type, claim.value);
+            }
             editableUser.roles = role;
+            ViewBag.NeededClaims = claims;
             return View(editableUser);
         }
 

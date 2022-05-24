@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Artem\Desktop\Publish\SSO</_PublishTargetUrl>
-    <History>True|2022-05-20T15:38:45.9491291Z;True|2022-05-20T16:51:02.2831220+03:00;</History>
+    <History>True|2022-05-20T21:04:13.8660730Z;True|2022-05-20T18:38:45.9491291+03:00;True|2022-05-20T16:51:02.2831220+03:00;</History>
   </PropertyGroup>
 </Project>

@@ -10,25 +10,22 @@ namespace SSOBase.Controllers
     [Route("login")]
     public class LoginController : Controller
     {
-        private readonly ClientsDbContext _clientContext;
-        private readonly DataDbContext _dataContext;
+        private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
 
         public LoginController(
-            ClientsDbContext clientContext,
-            UserManager<ApplicationUser> userManager,
-            DataDbContext dataContext)
+            ApplicationDbContext context,
+            UserManager<ApplicationUser> userManager)
         {
-            _clientContext = clientContext;
+            _context = context;
             _userManager = userManager;
-            _dataContext = dataContext;
         }
 
         [Route("")]
         [HttpGet]
         public IActionResult Index(string client_id, string response_type, string redirect_uri)
         {
-            var client = _clientContext.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
+            var client = _context.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
             if (client == null)
             {
                 return Redirect(redirect_uri + "?error=unknown_client");
@@ -44,7 +41,7 @@ namespace SSOBase.Controllers
         [HttpPost]
         public async Task<IActionResult> IndexAsync(string client_id, string response_type, string redirect_uri, [FromForm] string email, [FromForm] string password)
         {
-            var client = _clientContext.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
+            var client = _context.Clients.Where(b => b.ClientId == client_id).FirstOrDefault();
             if (client == null)
             {
                 return Redirect(redirect_uri + "?error=unknown_client");
@@ -64,8 +61,6 @@ namespace SSOBase.Controllers
             {
                 string code = Guid.NewGuid().ToString();
                 DateTime codeExpirationTime = DateTime.UtcNow.AddMinutes(5);
-                user.Code = code;
-                var updateStatus = await _userManager.UpdateAsync(user);
                 AuthorizationData data = new()
                 {
                     Code = code,
@@ -73,15 +68,9 @@ namespace SSOBase.Controllers
                     RedirectUri = redirect_uri,
                     CodeExpirationTime = codeExpirationTime
                 };
-                _dataContext.Add(data);
-                await _dataContext.SaveChangesAsync();
-                if (updateStatus.Succeeded)
-                {
-                    return Redirect(redirect_uri + "?code=" + code);
-                } else
-                {
-                    return Redirect(redirect_uri + "?error=failed_to_update_database");
-                }
+                _context.Add(data);
+                await _context.SaveChangesAsync();
+                return Redirect(redirect_uri + "?code=" + code);
                 return Content("Login success");
             }
             else

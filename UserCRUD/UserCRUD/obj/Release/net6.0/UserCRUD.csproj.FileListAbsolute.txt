@@ -268,3 +268,4 @@ F:\Data\Programming\Project 2 course\SSO\UserCRUD\UserCRUD\obj\Release\net6.0\Us
 F:\Data\Programming\Project 2 course\SSO\UserCRUD\UserCRUD\obj\Release\net6.0\ref\UserCRUD.dll
 F:\Data\Programming\Project 2 course\SSO\UserCRUD\UserCRUD\obj\Release\net6.0\UserCRUD.pdb
 F:\Data\Programming\Project 2 course\SSO\UserCRUD\UserCRUD\obj\Release\net6.0\UserCRUD.genruntimeconfig.cache
+F:\Data\Programming\Project 2 course\SSO\UserCRUD\UserCRUD\obj\Release\net6.0\UserCRUD.csproj.AssemblyReference.cache
